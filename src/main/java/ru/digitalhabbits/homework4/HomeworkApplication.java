@@ -7,11 +7,17 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.lang.reflect.MalformedParameterizedTypeException;
+import java.util.Collection;
+import java.util.Map;
+
 import static org.slf4j.LoggerFactory.getLogger;
 
 @SpringBootApplication
 public class HomeworkApplication
         implements ApplicationRunner {
+    private Collection collections;
+    private Map map;
     private static final Logger logger = getLogger(HomeworkApplication.class);
 
     @Value("${homework.message}")
