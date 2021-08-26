@@ -40,4 +40,5 @@ test {
 
 bootJar {
     archiveFileName = "${project.name}.jar"
+    exclude 'config'
 }
