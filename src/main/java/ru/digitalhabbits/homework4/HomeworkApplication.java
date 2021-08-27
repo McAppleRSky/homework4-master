@@ -25,6 +25,12 @@ public class HomeworkApplication
 
     public static void main(String[] args) {
         SpringApplication.run(HomeworkApplication.class, args);
+
+        /*spring.config.import=classpath:additional-application.properties,
+                classpath:additional-application[.yml],
+        optional:file:./external.properties,
+                classpath:additional-application-properties/ 4spring-boot:2.4.0 */
+
     }
 
     @Override
