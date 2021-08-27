@@ -40,12 +40,12 @@ test {
 
 bootJar {
     archiveFileName = "${project.name}.jar"
-    exclude 'config'
+    /*exclude 'config'
     doLast{
         copy {
             from "build/resources/main/config"
             into "build/libs/config"
         }
         delete "build/resources/main/config"
-    }
+    }*/
 }
